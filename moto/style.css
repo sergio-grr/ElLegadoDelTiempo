@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#layer1, #layer2, #layer3, #layer4, #player, #rival1, #rival2, #smokeExplosion, #fireExplosion, #reset {
+  display: none;
+}
+
+body {
+  background-image: url(../dino/assets/fondo.jpeg);
+  background-size: cover;
+}
+
+#canvas1 {
+  border: 5px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  max-width: 100%;
+  max-height: 80%;
+  background-color: rgb(111, 111, 245);
+  z-index: 1;
+}
+
+#controls {
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+#reset {
+  background-color: #f04646;
+  color: white;
+  font-size: 24px;
+  padding: 10px 50px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin: 0 auto; /* Centra el botón horizontalmente */
+}
+
+
+#controls button {
+  width: 150px; /* Establece un ancho fijo para los botones */
+  font-size: 24px;
+  padding: 10px 0; /* Ajusta el relleno para centrar el contenido verticalmente */
+  background-color: #46b2f0;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin: 0 10px; /* Añade un margen entre los botones */
+}
+.navbar {
+  background-color: #333; /* Color de fondo de la barra de navegación */
+  padding: 10px 20px; /* Espaciado interno */
+  display: flex; /* Mostrar elementos en línea */
+  justify-content: space-between; /* Distribuir los elementos a los extremos */
+}
+
+.navbar-brand {
+  color: white; /* Color del texto */
+  text-decoration: none; /* Quitar subrayado del texto */
+  font-size: 18px; /* Tamaño del texto */
+  font-family: 'Arial', sans-serif; /* Cambiar la fuente */
+}
+
+.navbar-brand:hover {
+  color: #ffc107; /* Cambiar color al pasar el ratón */
+}
+
+
+.navbar-brand {
+  color: white; /* Color del texto */
+  text-decoration: none; /* Quitar subrayado del texto */
+  font-size: 18px; /* Tamaño del texto */
+}
+
+.navbar-brand:hover {
+  color: #ffc107; /* Cambiar color al pasar el ratón */
+}
+
+#controls button:hover {
+  background-color: #46b2f0;
+}
+
+a.button-home {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+a.button-home button {
+  background-color: green;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+a.button-home button svg {
+  fill: white;
+}
+
+/* Ocultar los botones en pantallas más grandes */
+@media only screen and (min-width: 601px) {
+  #controls button {
+    display: none; /* Oculta los botones en pantallas grandes */
+  }
+}
+
+/* Mostrar los botones solo en pantallas más pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+  #controls button {
+    display: inline-block; /* Muestra los botones solo en pantallas pequeñas */
+  }
+}
