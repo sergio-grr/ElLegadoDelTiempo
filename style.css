@@ -5,20 +5,30 @@ body {
   text-align: center; /* Alinear el texto en el centro */
 }
 
+
 #titulodeljuego {
-  max-width: 80%; 
+  max-width: 80%; /* Limitar el ancho del título */
+  margin: 20px auto 0; /* Agregar espacio superior y centrar */
 }
+
+
+
+
 
 #fondoinicio {
-  background-image: url(Imagenes/Fondo.jpeg);
+  background-image: url(assets/Fondo.jpeg);
   background-size: cover; /* Cubrir todo el contenedor */
   background-position: center; /* Centrar la imagen */
-  height: 490px; /* Ajustar la altura */
+  height: 500px; /* Ajustar la altura */
+  padding: 20px;
 }
 
+
 #Empezar:hover {
-  background-color: #1c1181; /* Cambiar el color del botón al hover */
+  background-color: #16f58d; /* Cambiar el color del botón al hover */
 }
+
+
 
 #TituloElegirPersonaje {
   font-family: 'Roboto', sans-serif;
@@ -27,6 +37,7 @@ body {
   color: #e7e6e2;
   background-color: #3b4c7a;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+ 
 }
 
 @keyframes fadeIn {
@@ -40,4 +51,22 @@ body {
 
 .card:hover {
   transform: scale(1.05);
+}
+
+#controler {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+#functioning{
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+#podium{
+  width: 100%;
+  max-width: 450px;
+  height: auto;
 }
